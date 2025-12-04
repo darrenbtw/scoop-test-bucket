@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://laptop-updates.brave.com/latest/winx64",
-            "hash": "sha256:5d3b38ccec9483e473c5ce9f9b1b818518f075bea43a69e55f233e26d399c6e3"
+            "hash": "skip"
         }
     },
     "installer": {
@@ -14,16 +14,5 @@
     },
     "post_install": [
         "Remove-Item \"$dir\\BraveBrowserSetup.exe\" -Force"
-    ],
-    "checkver": {
-        "url": "https://laptop-updates.brave.com/latest/version",
-        "regex": "([0-9.]+)"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://laptop-updates.brave.com/latest/winx64"
-            }
-        }
-    }
+    ]
 }
