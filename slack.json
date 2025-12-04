@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.slack-edge.com/releases/windows/SlackSetup.exe",
-            "hash": "skip"
+            "hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
         }
     },
     "installer": {
