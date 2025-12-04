@@ -1,0 +1,29 @@
+{
+    "version": "latest",
+    "description": "Brave — Privacy-focused chromium-based web browser.",
+    "homepage": "https://brave.com/",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://laptop-updates.brave.com/latest/winx64",
+            "hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+        }
+    },
+    "installer": {
+        "script": "Start-Process \"$dir\\BraveBrowserSetup.exe\" -Wait"
+    },
+    "post_install": [
+        "Remove-Item \"$dir\\BraveBrowserSetup.exe\" -Force"
+    ],
+    "checkver": {
+        "url": "https://laptop-updates.brave.com/latest/version",
+        "regex": "([0-9.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://laptop-updates.brave.com/latest/winx64"
+            }
+        }
+    }
+}
