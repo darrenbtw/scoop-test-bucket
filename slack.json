@@ -5,7 +5,7 @@
     "license": "Proprietary",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.slack-edge.com/releases/windows/SlackSetup.exe",
+            "url": "https://downloads.slack-edge.com/releases/windows/production/SlackSetup.exe",
             "hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
         }
     },
