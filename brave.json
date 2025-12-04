@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://laptop-updates.brave.com/latest/winx64",
-            "hash": "skip"
+            "hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
         }
     },
     "installer": {
